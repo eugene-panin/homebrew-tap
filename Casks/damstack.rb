@@ -30,7 +30,7 @@ cask "damstack" do
   end
 
   name "damstack"
-  desc "Set up your own server and run apps on it, from one file you edit, with nothing but Docker installed"
+  desc "Set up your own server and run apps on it from one file you edit"
   homepage "https://github.com/eugene-panin/damstack"
 
   livecheck do
