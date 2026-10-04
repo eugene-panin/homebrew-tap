@@ -6,25 +6,25 @@ cask "vctx" do
     end
   end
 
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "6a4144a89853214545a749a89f8b0b5e3b1a1334fbb8a1535cb904e4aa423a8e"
+      sha256 "3154b849dd7fdcc48879b04970701c78d58434d49123ab376e3f262cbbdcc085"
       url "https://github.com/eugene-panin/vctx/releases/download/v#{version}/vctx_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "97d1a82b716cb966fe34ca6ed2de23ec050d1d9195293048409db70911ecfbbe"
+      sha256 "700f723f4fa62f1f325f1c51c7736e179a94a8fc362cecd5d6b14cd106389c59"
       url "https://github.com/eugene-panin/vctx/releases/download/v#{version}/vctx_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "61173e3d9f28c11d40a9297693cb4bcb3a6154228a0a601af254b48db8a5f05d"
+      sha256 "a90c1ca02aa48e3a571aa6ca7e5e3b65e4d9c5800f062dcc400bdb70aa3ffcfd"
       url "https://github.com/eugene-panin/vctx/releases/download/v#{version}/vctx_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e38905fa5cb94e0a6eea1c8f2ad91d29c9c865a2171603db0ba785e5a57d5f7f"
+      sha256 "112c4acf526bdbcaeb5093182da94b531140aef0269a7e98221ec474b4eca7d6"
       url "https://github.com/eugene-panin/vctx/releases/download/v#{version}/vctx_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -38,6 +38,9 @@ cask "vctx" do
   end
 
   binary "vctx"
+  bash_completion "completions/vctx.bash"
+  fish_completion "completions/vctx.fish"
+  zsh_completion "completions/vctx.zsh"
 
   # No zap stanza required
 
