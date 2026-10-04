@@ -6,26 +6,16 @@ cask "damstack" do
     end
   end
 
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     on_arm do
-      sha256 "d57650c255a727a5a19c08f6b44763df7e1caee7da30da19d52a7cb890c1384b"
+      sha256 "000ca00801416ceb42e2aa61882450a145cfa4a976869a4b101c7a9a30795dcb"
       url "https://github.com/eugene-panin/damstack/releases/download/v#{version}/damstack_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "03101e179f04bef0eefa2f4fd71eb88da54f5c08d8d5621ebfa3415e438fb4d0"
+      sha256 "9daedae1755bba74aaedc9fa90b6f0f8e967999518f0680193b18fc30be35824"
       url "https://github.com/eugene-panin/damstack/releases/download/v#{version}/damstack_#{version}_darwin_amd64.tar.gz"
-    end
-  end
-  on_linux do
-    on_arm do
-      sha256 "bf390a247ed132dfc65a560b698e984633c4def0c21b7da35b0709917268fc97"
-      url "https://github.com/eugene-panin/damstack/releases/download/v#{version}/damstack_#{version}_linux_arm64.tar.gz"
-    end
-    on_intel do
-      sha256 "356358a12ac7b5610ec79ae9a0ccb4b03d9a610540eaa712c6aea19928314dd5"
-      url "https://github.com/eugene-panin/damstack/releases/download/v#{version}/damstack_#{version}_linux_amd64.tar.gz"
     end
   end
 
@@ -42,7 +32,6 @@ cask "damstack" do
   # No zap stanza required
 
   caveats <<~EOS
-    damstack runs its tools in Docker: install Docker Desktop, OrbStack or Colima.
-    Then run damstack: it checks this machine and says where to start.
+    Run damstack: it checks this Mac and says where to start.
   EOS
 end
