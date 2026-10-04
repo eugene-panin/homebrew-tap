@@ -6,25 +6,25 @@ cask "kx" do
     end
   end
 
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     on_arm do
-      sha256 "377cc868257b29dd24d6bc5cf03a8d757be2051ac2fca9cdf431144c39ae3539"
+      sha256 "cc66f11292a4c05638f09bee7fbbc6da185dc69ac55ed4f6f18f4c057caba7ca"
       url "https://github.com/eugene-panin/kx/releases/download/v#{version}/kx_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b76df7edce4b64e0da58b3304ea9037292d0877a008fd9c8d7e578ab2f38c354"
+      sha256 "a25fe4b9c080ac2256fa4095606b140e208ea38963c8160c167c889d978cdadf"
       url "https://github.com/eugene-panin/kx/releases/download/v#{version}/kx_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "2b1137a022096e511385507846954d34b8f9f1a2854c6cca863632b77c02fc33"
+      sha256 "963a3cf40d42b6f4e4a6c082e27f0c9e4b1a7a4c2d51172f7bd6dbd32300083a"
       url "https://github.com/eugene-panin/kx/releases/download/v#{version}/kx_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "adf570b98cdca05e5dd9ec6b896ba4b1e706895e0cba8a8f2a9a64ff45e220d1"
+      sha256 "697645ee496adc7b3ab35769328085948c6d77fc64bf4a04124aab529866e50a"
       url "https://github.com/eugene-panin/kx/releases/download/v#{version}/kx_#{version}_linux_amd64.tar.gz"
     end
   end
