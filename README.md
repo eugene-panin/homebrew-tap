@@ -1,13 +1,15 @@
 # homebrew-tap
 
-Homebrew casks of my tools:
+Homebrew formulae and casks of my tools:
 
-- [kx](https://github.com/eugene-panin/kx): keep kubeconfigs for many clients' clusters in one place
+- [kctx](https://github.com/eugene-panin/kctx): Kubernetes context switcher with client grouping and a TUI
 - [vctx](https://github.com/eugene-panin/vctx): switch the Vault CLI between several Vault instances
 
 ```bash
-brew install eugene-panin/tap/kx
+brew tap eugene-panin/tap
+brew install --HEAD eugene-panin/tap/kctx
 brew install eugene-panin/tap/vctx
 ```
 
-The casks are written by GoReleaser on every release; do not edit them by hand.
+`kx` is replaced by `kctx` (same problem, simpler model: one normal kubeconfig).
+Release casks under `Casks/` are written by GoReleaser; the `kctx` formula builds from `main`.
