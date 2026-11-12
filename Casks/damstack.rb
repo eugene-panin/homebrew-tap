@@ -6,25 +6,25 @@ cask "damstack" do
     end
   end
 
-  version "0.30.0"
+  version "0.31.0"
 
   on_macos do
     on_arm do
-      sha256 "a260840c9b1c39937a6384c3feb0c3103f5d3e6104e1c7fb07cb5d6084ee3dd6"
+      sha256 "be1f57fafab535043e6cb8748fa77c9be1ebecf5b9a9667699b5f173202ff4d0"
       url "https://github.com/eugene-panin/damstack-releases/releases/download/v#{version}/damstack_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5174cfd45a91100e768652406823756bf49edaf6085095c90fa7d133abfae52d"
+      sha256 "cf17ac9c8cbda115740cd8c68e573a611587cb078a151afb96391c73774487ab"
       url "https://github.com/eugene-panin/damstack-releases/releases/download/v#{version}/damstack_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "a7b35ad0f5487f9362bc209d70f81c15ad27d88ef33aff1dba677b8bddf31f7c"
+      sha256 "73de8779a5d14bbd85f4ba798840ad47dba353d0902e67313972e4008d655c31"
       url "https://github.com/eugene-panin/damstack-releases/releases/download/v#{version}/damstack_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3bc44b607b4248c7b3e2a6f0d98fe14c9000bfce0990bba155e25f9a120f3ac5"
+      sha256 "9b80f5ef7637424f716f6d3479b178ccf15c88ab390fc55656f674ac8ece964c"
       url "https://github.com/eugene-panin/damstack-releases/releases/download/v#{version}/damstack_#{version}_linux_amd64.tar.gz"
     end
   end
